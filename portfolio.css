@@ -13,6 +13,8 @@ body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--text-color);
   color: #393e46;
+
+  -webkit-tap-highlight-color: transparent;
 }
 html {
   scroll-behavior: smooth;
@@ -31,7 +33,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  box-shadow: 1px 1px 5px #2d46b9;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 nav .logo a {
@@ -52,6 +54,7 @@ nav .menu-icon span {
   height: 4px;
   margin: 5px;
   background-color: #fff;
+
   transition: all 0.3s ease-in-out;
 }
 nav ul {
@@ -59,6 +62,7 @@ nav ul {
 }
 nav ul.menu {
   display: flex;
+  transition: all 0.3s ease-in-out;
 }
 
 nav ul.menu li {
@@ -76,15 +80,16 @@ a:hover {
   color: #f037a5;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   nav .menu-icon {
     display: block;
-    transform: translateX(-20%);
+    position: absolute;
+    right: 20px;
   }
 
   nav ul.menu {
-    display: none;
-    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: -200px;
   }
 
   nav ul.menu.active {
@@ -94,11 +99,11 @@ a:hover {
     background-color: #1e3163;
     top: 100px;
     right: 0;
-    padding: 80px 0 0;
+    /* padding: 80px 0 0; */
     height: auto;
     flex-direction: column;
     align-items: center;
-    box-shadow: 1px 1px 5px #2d46b9;
+    opacity: 1;
   }
 
   nav ul.menu li {
@@ -126,7 +131,7 @@ section {
 }
 /* Home Page */
 .hero {
-  padding: 5em 2em 2em 2em;
+  padding: 5em 3em 3em 2em;
   text-align: left;
   display: flex;
   gap: 20px;
@@ -134,7 +139,6 @@ section {
 .hero img {
   width: 40%;
   border-radius: 10px;
-  object-fit: cover;
 }
 @media (max-width: 900px) {
   .hero {
@@ -186,14 +190,13 @@ button:hover {
 .about {
   background-color: #1e3163;
   display: flex;
-  gap: 10px;
+  gap: 15px;
   color: var(--text-color);
   padding: 3rem 2rem 2rem 3rem;
 }
 .about img {
-  width: 60%;
+  width: 50%;
   height: 60vh;
-  border-radius: 5px;
 }
 .about h2 {
   font-size: 2em;
