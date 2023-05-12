@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdulrahman's Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#">
+          <img src="images/Abdulrahman's Portfolio (4).png" alt="" />
+        </a>
+      </div>
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="home-content">
+        <h2>Welcome to My Portfolio</h2>
+        <p>
+          I am a web developer with a passion for creating beautiful and
+          functional websites. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Ea cum esse quibusdam iure consequatur, hic minima
+          qui rem omnis quod voluptate facere, inventore eius! Perspiciatis,
+          accusantium expedita. Accusantium, sit qui? Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Voluptas architecto quidem commodi
+          nostrum sapiente molestias iure, quos porro facere soluta earum neque
+          perferendis quaerat corporis doloremque dicta. At, debitis voluptate.
+        </p>
+        <button><a href="#contact">Contact Me</a></button>
+      </div>
+      <img src="images/profile.svg" alt="" />
+    </section>
+
+    <section class="about" id="about">
+      <img src="images/profile_person.svg" alt="" />
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          I have been working as a web developer for over 5 years, and I have
+          experience with a variety of programming languages and frameworks.
+        </p>
+        <p>
+          In my free time, I enjoy exploring new technologies and creating side
+          projects to further develop my skills.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, maxime? Facere eveniet fuga, sequi iure alias
+          obcaecati hic quis est, ratione ducimus labore recusandae vero,
+          nostrum expedita. Quis, reiciendis incidunt!
+        </p>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2>Featured Projects</h2>
+      <hr />
+      <div class="project">
+        <img src="images/number_guess_page.png" alt="Project 1" />
+        <h3>
+          <a
+            href="https://developershypertech.github.io/Speech-word-Guess/"
+            target="_blank"
+            >Number Guessing Game</a
+          >
+        </h3>
+        <p>Random numbers generated for you to guess.</p>
+      </div>
+      <div class="project">
+        <img src="images/rock_paper_scissors.png" alt="Project 2" />
+        <h3>
+          <a
+            href="https://developershypertech.github.io/rock-paper-scissors/"
+            target="_blank"
+            >Rock Paper Scissors Game</a
+          >
+        </h3>
+        <p>An online version of the rock paper scissors game.</p>
+      </div>
+      <div class="project">
+        <img src="images/qur'an_app_page.png" alt="Project 3" />
+        <h3>
+          <a
+            href="https://developershypertech.github.io/Qur-an-Player-App/"
+            target="_blank"
+            >Qu'ran Player</a
+          >
+        </h3>
+        <p>A mix of 3 surahs from the glorious Qur'an.</p>
+      </div>
+      <div class="project">
+        <img src="images/solahtime page.png" alt="Project 3" />
+        <h3>
+          <a href="https://prayertime.onrender.com" target="_blank"
+            >Solah Time App</a
+          >
+        </h3>
+        <p>Prayer time accessibility made easy with just few clicks.</p>
+      </div>
+
+      <div class="project">
+        <img src="images/weather page.png" alt="Project 3" />
+        <h3>
+          <a href="https://dizzy-bracelet-duck.cyclic.app/" target="_blank"
+            >Weather App</a
+          >
+        </h3>
+        <p>Weather updates from every corner of the world.</p>
+      </div>
+
+      <div class="project">
+        <img src="images/relaxer page.png" alt="Project 3" />
+        <h3>
+          <a
+            href="https://developershypertech.github.io/relaxer-app/"
+            target="_blank"
+            >Relaxer</a
+          >
+        </h3>
+        <p>Relax.Take a deep breath and hire me.</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <h3>Take action today</h3>
+      <form method="post" action="https://formspree.io/f/xpzenagj">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="John Doe"
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="_replyto"
+          required
+          placeholder="example@expample.com"
+        />
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          required
+          placeholder="I need a website for my Business"
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Abdulrahman</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
