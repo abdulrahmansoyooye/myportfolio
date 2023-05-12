@@ -190,13 +190,15 @@ button:hover {
 .about {
   background-color: #1e3163;
   display: flex;
-  gap: 15px;
+  gap: 20px;
+  align-items: center;
   color: var(--text-color);
   padding: 3rem 2rem 2rem 3rem;
+  /* height: 90vh; */
 }
 .about img {
-  width: 50%;
-  height: 60vh;
+  /* width: 50%; */
+  height: 400px;
 }
 .about h2 {
   font-size: 2em;
