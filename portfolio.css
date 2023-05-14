@@ -86,7 +86,10 @@ a:hover {
     position: absolute;
     right: 20px;
   }
-
+  nav img {
+    width: 100%;
+    object-fit: cover;
+  }
   nav ul.menu {
     position: absolute;
     top: -200px;
@@ -143,7 +146,6 @@ section {
 @media (max-width: 900px) {
   .hero {
     flex-direction: column;
-    height: 100vh;
   }
   .hero img {
     display: none;
@@ -288,6 +290,9 @@ button:hover {
   padding: 1em;
   border: none;
   width: 60%;
+  background-color: inherit;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  color: #fff;
 }
 .contact input:focus {
   outline: none;
