@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="portfolio.css" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav>
@@ -51,7 +52,7 @@
 
     <section class="about" id="about">
       <img src="images/about2.svg" alt="" />
-      <div class="about-content">
+      <div>
         <h2>About Me</h2>
         <p>
           I have been working as a web developer for over 2 years, and I have
@@ -73,7 +74,14 @@
     <section class="portfolio" id="portfolio">
       <h2>Featured Projects</h2>
       <hr />
-      <div class="project">
+      <div
+        class="project"
+        class="about-content"
+        data-aos="zoom-in"
+        data-aos-duration="5000"
+        data-aos-once="false"
+        data-aos-delay="500"
+      >
         <img src="images/number_guess_page.png" alt="Project 1" />
         <h3>
           <a
@@ -158,5 +166,9 @@
     </footer>
 
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
